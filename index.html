@@ -1,23 +1,32 @@
-<!doctype html>
+<!--Edited and Corrected and Added more information by Hieu Nguyen -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!--jQuery script link-->
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>
 </head>
 <body>
 		<div class="main">
-			<div class="ryu">
-				<div class="ryu-still"></div>
-				<div class="ryu-ready"></div>
-				<div class="ryu-throwing"></div>
+			<div class="instructions">
+				<p>Use your mouse pointer to Click on Ryu to throw a Hadouken (Fireball).</p>
+				<p>Use your keyboard and press and hold down the letter "X" key make Ryu pose.</p>	
+			</div>
+				<div class="ryu">
+					<div class="ryu-still"></div>
+					<div class="ryu-ready"></div>
+					<div class="ryu-throwing"></div>
+				<!--Add Ryu Cool into a div class as per in the assignment. In relation of the app.js and images/ryu-cool.gif-->
+					<div class="ryu-cool"></div>
 				</div>
+				<!--Add instructions and text to explain the objective for Ryu (fireball and pose) -->
+				<!--Also use paragraph and also class to display text.-->
 				<div class="hadouken"></div>
-		
-		</div>
+			</div>
+	<audio id="hadouken-sound" src="sound/hadouken.mp3">		
+		<!--jQuery script link-->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

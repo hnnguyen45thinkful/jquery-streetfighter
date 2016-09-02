@@ -1,7 +1,15 @@
+/*Edited and Added and Corrected by Hieu Nguyen */
 /*Street Fighter: HTML and CSS Walkthrough*/
 /*Background Color*/
 body {
   background-color: black;
+}
+
+/*Make text on screen clear*/
+.instructions {
+	font-size: 30px;
+	margin: 20px 4em 0 600px;
+	position: absolute;
 }
 
 /*Main Container*/
@@ -19,14 +27,16 @@ body {
 .ryu {
     width: 659px;
     height: 494px;
+/*I had to add this line of code*/
+	float: left;	
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool /*add .ryu-cool part of div class*/{
   width: 659px;
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool /*add .ryu-cool part of div class*/{
   display: none;
 } 
 
@@ -42,7 +52,12 @@ body {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+/*Add .ryu-cool property*/
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool /*add .ryu-cool part of div class*/ {
   background-repeat: no-repeat;
 }
 
