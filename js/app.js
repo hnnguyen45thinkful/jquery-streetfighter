@@ -1,5 +1,5 @@
 //Edited and Corrected and Added by Hieu Nguyen
-//Ryu Throwing Position
+//Ryu Throwing Position in the initial place on the screen.
 $(document).ready(function() {
 	$('.ryu').mouseenter(function() {
 		$('.ryu-still').hide();
